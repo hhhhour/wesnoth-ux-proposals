@@ -1,0 +1,20 @@
+✔. Campaign/scenario selection with interactive map and timeline
+✔ One difficulty scale for all campaigns: Novice, Easy, Normal, Hard, Nightmare
+2. Restructured main menu to focus on Play / Continue
+✔ Access single player content (including scenarios) through one interface separate from MP.
+✔ Achievements / stretch goals tracked for single player in the game.
+✔ Scenario types (ie - Survival/rogue-lite/defense, RPG, etc)
+
+
+9. "RNG" moved to settings and renamed "Fortune": none, some, a lot; Order, Balance, Chaos; Favored, Neutral, Forsaken;
+11. Identify addons in beta/testing stage
+
+8. Help text should appear between scenarios, during loading screens, or in other scenarios.
+5. Addon tags/labels to identify play style, length, etc.
+6. Button overlay for unit actions like move/attack, as well as a place for "right-click" actions. (Future options for unit abilities/specials.)
+
+background: #1e1c1b
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">

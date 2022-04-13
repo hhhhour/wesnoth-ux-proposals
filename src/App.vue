@@ -1,28 +1,57 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <main-screen v-if="screen === 'main'" @screen:set="setScreen" />
+    <play-screen v-if="screen === 'play'" @screen:set="setScreen" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainScreen from './components/MainScreen.vue'
+import PlayScreen from './components/PlayScreen.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainScreen,
+    PlayScreen
+  },
+  data() {
+    return {
+      screen: 'main'
+    }
+  },
+  methods: {
+    setScreen(screen) {
+      this.screen = screen;
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+html,
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #fff;
+  background: #1e1c1b;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+html,
+body,
+button {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 </style>
